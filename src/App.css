@@ -1,38 +1,73 @@
-.App {
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #319cde;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  margin: 0 auto 20px; 
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 350px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  margin-right: 10px;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 24px); 
+  transition: border-color 0.3s;
+  margin-bottom: 15px; 
+}
+
+input:focus {
+  border-color: #319cde;
+  outline: none;
+  box-shadow: 0 0 5px rgba(49, 156, 222, 0.5);
+}
+
+button {
+  padding: 12px 20px;
+  background: #59a8d9;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%; 
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #319cde;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 350px; 
+  margin: 0 auto; 
+}
+
+li {
+  background: #ffffff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
